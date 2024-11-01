@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
-group :db2 do
-  gem 'ibm_db'
-end
+# group :db2 do
+#   gem 'ibm_db'
+# end
 
 group :mysql do
   gem 'mysql2'

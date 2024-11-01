@@ -12,6 +12,7 @@ end
 #
 # check if the given adapter is supported (default: mysql)
 #
+# adapters = %w[mysql sqlite oracle oracle_enhanced postgresql trilogy]
 adapters = %w[mysql sqlite oracle oracle_enhanced postgresql ibm_db trilogy]
 adapter = ENV['ADAPTER'] || 'mysql'
 unless adapters.include? adapter
@@ -45,4 +46,3 @@ require 'composite_primary_keys'
 
 PROJECT_ROOT = File.join(File.dirname(__FILE__), '..')
 Dir[File.join(PROJECT_ROOT,'test/fixtures/*.rb')].each { |model| require model }
-

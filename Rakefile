@@ -23,6 +23,7 @@ Dir.glob('tasks/**/*.rake').each do |rake_file|
 end
 
 # Set up test tasks for each supported connection adapter
+# %w(mysql sqlite oracle oracle_enhanced postgresql sqlserver trilogy).each do |adapter|
 %w(mysql sqlite oracle oracle_enhanced postgresql ibm_db sqlserver trilogy).each do |adapter|
   namespace adapter do
     desc "Run tests using the #{adapter} adapter"

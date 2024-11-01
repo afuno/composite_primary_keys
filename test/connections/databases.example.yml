@@ -2,11 +2,11 @@
 #  1. Copy this file to test/connections/databases.yml.
 #  2. Update to match the databases you want to test against.
 
-ibm_db:
-  database: ocdpdev
-  username: db2inst1
-  password: password
-  host: localhost
+#ibm_db:
+#  database: ocdpdev
+#  username: db2inst1
+#  password: password
+#  host: localhost
 
 mysql:
   adapter: mysql2
